@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "FSI SCORM Helper",
+  "version": "1.0",
+  "description": "Adds a small panel on the Fortinet Moodle SCORM player page to inspect and complete the SCORM activity.",
+  "content_scripts": [
+    {
+      "matches": ["https://training.fortinet.com/mod/scorm/player.php*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}
